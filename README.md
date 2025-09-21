@@ -13,6 +13,8 @@ Height: 508 mm
 Width: 711 mm
 Splitter plate to ceiling: 382 mm
 Model span: 584 mm
+![Uploading image.png…]()
+
 <img width="1354" height="847" alt="cont-vel" src="https://github.com/user-attachments/assets/3995933e-5be9-4f10-a5c7-0fd47c8f34de" />
 <img width="1354" height="847" alt="meanvelocity" src="https://github.com/user-attachments/assets/c64384e3-63d4-497e-85fe-087fc82abbec" />
 <img width="1354" height="847" alt="str-vel" src="https://github.com/user-attachments/assets/5f8af060-bdab-4826-83d6-236f264a5c91" />
