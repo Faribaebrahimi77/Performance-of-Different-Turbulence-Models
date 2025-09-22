@@ -1,19 +1,35 @@
-# Performance Evaluation of RANS Turbulence Models for Flow Over Curved Bodies
+# Comparative Analysis of RANS Turbulence Models for Curved Hump Flow Simulation
 
+# ovwrview
+This research focuses on a comprehensive comparative analysis of various Reynolds-Averaged Navier-Stokes (RANS) turbulence models for simulating turbulent flow over a curved hump geometry. The study aims to evaluate the accuracy, computational efficiency, and predictive capabilities of different RANS approaches using the Greenblatt experimental benchmark as validation reference.
 
-This project performs a comprehensive Computational Fluid Dynamics (CFD) analysis of steady, incompressible turbulent flow over a curved hump geometry, based on the experimental setup used by Greenblatt et al. The study evaluates the performance of different RANS turbulence models in predicting complex flow phenomena including separation, reattachment, and adverse pressure gradient effects.
-🏗️ Geometry Specifications
+The study evaluates the performance of different RANS turbulence models in predicting complex flow phenomena including separation, reattachment, and adverse pressure gradient effects.
 
-Hump Length (c): 420 mm
-Maximum Height (h): 53.7 mm
-Geometry Type: 2D profile with uniform span-wise extension
-Test Section Dimensions:
+# Geometry Specifications
+<img width="806" height="337" alt="image" src="https://github.com/user-attachments/assets/99079d63-405c-4647-b2eb-e8dcdd7e445b" />
+# Methodology
+Computational Approach
+This study utilizes ANSYS Fluent as the primary CFD solver, leveraging its comprehensive RANS turbulence model library and advanced numerical schemes.
+Software Configuration:
 
-Height: 508 mm
-Width: 711 mm
-Splitter plate to ceiling: 382 mm
-Model span: 584 mm
+CFD Platform: ANSYS Fluent 2023 R1
 
+Mesh Generation: ANSYS Meshing with structured/unstructured hybrid approach 
+
+Post-Processing: CFD-Post, Tecplot 360, and custom Python scripts
+
+High-Performance Computing: Parallel processing on multi-core systems
+
+# Results and Conclusion
+The exact location of flow separation and reattachment could not be accurately predicted using the applied models, and a higher level of precision is required for reliable reattachment prediction.
+
+The k-ε models generally showed the weakest performance, and some of them were not able to predict flow separation.
+
+The k-ω models, especially the SST model, demonstrated higher accuracy and delivered the best performance in this study.
+
+The RSM model, in some cases, showed lower accuracy compared to the SST model. This might be due to its sensitivity to grid resolution and mesh quality, or because the Linear Pressure-Strain approach was applied in this model.
+
+Ultimately, none of the turbulence models can be considered universally reliable for all cases. A suitable model should be selected for each specific condition, and validation should always be performed after simulation.
 ![Uploading image.png…]()
 <img width="1354" height="847" alt="cont-vel" src="https://github.com/user-attachments/assets/3995933e-5be9-4f10-a5c7-0fd47c8f34de" />
 <img width="1354" height="847" alt="meanvelocity" src="https://github.com/user-attachments/assets/c64384e3-63d4-497e-85fe-087fc82abbec" />
@@ -22,55 +38,3 @@ Model span: 584 mm
 
 
 
-🔍 Analysis Methodology
-
-Geometry Setup
-
-Curved body configuration
-Structured/unstructured mesh generation
-Boundary condition specification
-
-
-Numerical Simulation
-
-CFD solver implementation
-Multiple RANS model execution
-Convergence monitoring
-
-
-Comparative Analysis
-
-Statistical error analysis
-Experimental data validation
-Performance ranking system
-
-
-Results Documentation
-
-Quantitative comparison tables
-Flow visualization
-Comprehensive reporting
-
-
-
-📈 Expected Outcomes
-
-Model Performance Ranking for curved body flows
-Best Practice Guidelines for turbulence model selection
-Computational Cost Analysis for each model
-Accuracy vs. Efficiency Trade-offs documentation
-
-🛠️ Tools & Software
-
-CFD Solver: ANSYS Fluent / OpenFOAM
-Mesh Generation: ANSYS Meshing / GMSH
-Post-processing: ParaView / Tecplot
-Data Analysis: Python / MATLAB
-
-📚 Applications
-This research contributes to improved CFD modeling in:
-
-Aircraft design (wing profiles, fuselage)
-Automotive aerodynamics (vehicle body optimization)
-Marine engineering (ship hull design)
-Turbomachinery (blade profile analysis)
