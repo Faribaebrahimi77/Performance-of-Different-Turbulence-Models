@@ -1,6 +1,6 @@
 # Comparative Analysis of RANS Turbulence Models for Curved Hump Flow Simulation
 
-# ovwrview
+# overview
 This research focuses on a comprehensive comparative analysis of various Reynolds-Averaged Navier-Stokes (RANS) turbulence models for simulating turbulent flow over a curved hump geometry. The study aims to evaluate the accuracy, computational efficiency, and predictive capabilities of different RANS approaches using the Greenblatt experimental benchmark as validation reference.
 
 The study evaluates the performance of different RANS turbulence models in predicting complex flow phenomena including separation, reattachment, and adverse pressure gradient effects.
