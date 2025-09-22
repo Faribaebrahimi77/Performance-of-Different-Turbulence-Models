@@ -7,6 +7,8 @@ The study evaluates the performance of different RANS turbulence models in predi
 
 # Geometry Specifications
 <img width="806" height="337" alt="image" src="https://github.com/user-attachments/assets/99079d63-405c-4647-b2eb-e8dcdd7e445b" />
+
+
 # Methodology
 Computational Approach
 This study utilizes ANSYS Fluent as the primary CFD solver, leveraging its comprehensive RANS turbulence model library and advanced numerical schemes.
